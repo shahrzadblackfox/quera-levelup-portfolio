@@ -11,6 +11,7 @@
     --inpit-color:hsl(250,70%,96%);
     --container-color:#fff;
     --gray-background: rgb(228, 228, 228);
+    --fill-black-color: rgb(26, 26, 26); 
 
 
     --body-font:'Quicksand', sans-serif;;
@@ -106,7 +107,7 @@ img{
     bottom: 0;
     left: 0;
     z-index: 2;
-    background-color: #fff;
+    background-color: var(--container-color)
 }
 .nav{
     max-width: 960px;
@@ -337,6 +338,15 @@ img{
     background-color: var(--gray-background)
 }
 
+.writing-img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+    fill: var(--fill-black-color)
+}
+
+
 
 
 .footer{
@@ -433,6 +443,7 @@ body.dark-theme{
     --inpit-color:hsl(250,70%,96%);
     --container-color:#000000;
     --gray-background: rgb(78, 78, 78);
+    --fill-black-color:#fff;
 
 
 
