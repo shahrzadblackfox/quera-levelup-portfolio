@@ -451,17 +451,17 @@ body.dark-theme {
   }
 }
 /*medium*/
-@media screen and (min-width: 568) {
+@media screen and (min-width: 568px) {
   .home-content {
     grid-template-columns: max-content 1fr 1fr;
   }
   .home-data {
-    grid-column: initial 2fr;
+    grid-column: initial ;
 
   }
   .home-img {
-    order: 1;
-    justify-self: center;
+ 
+    justify-self: left;
 
   }
   .about-container,
@@ -521,7 +521,7 @@ body.dark-theme {
   }
 
   .home-blob {
-    width: 370px;
+    width: 570px;
   }
   .home-scroll {
     display: block;
@@ -568,7 +568,7 @@ body.dark-theme {
     padding: 0;
   }
   .home-blob {
-    width: 320px;
+    width: 520px;
   }
   .home-social {
     transform: translateX(-6rem);
