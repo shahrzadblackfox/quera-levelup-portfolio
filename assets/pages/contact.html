@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Shahrzad</title>
+  </head>
+  <body>
+    <!--- Header -->
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav-logo">Shahrzad</a>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list grid">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="uil uil-home nav-icon"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#about" class="nav-link">
+                <i class="uil uil-user-md nav-icon"></i> About
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">
+                <i class="uil uil-briefcase nav-icon"></i> Contact</a
+              >
+            </li>
+          </ul>
+          <i class="uil uil-times nav-close" id="nav-close"></i>
+        </div>
+        <div class="nav-btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="uil uil-apps nav-icon"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <section class="contact section-one" id="contact">
+        <div class="contact-container container grid">
+          <div class="contact-content grid">
+            <div class="contact-social">
+              <a
+                href="https://www.linkedin.com/in/shahrzad-amirrahimi-1a4a82197/"
+                target="_blank"
+                class="home-social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://www.shecodes.io/graduates/71833-shahrzad-amirrahimi"
+                target="_blank"
+                class="home-social-icon"
+              >
+                <i class="uil uil-link-h"></i>
+              </a>
+
+              <a
+                href="https://github.com/shahrzadblackfox"
+                target="_blank"
+                class="home-social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+            <div class="contact-data">
+                <h1 class="contact-title">Contact Me!</h1>
+                <h3 class="contact-sub">if you need content...</h3>
+                <p class="contact-desc">
+                  Text Me, Email me, if you want to reach me! <br>
+                  I'm not good with calls!
+                </p>
+
+              </div>
+              
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class=" container grid">
+            <h3 class="contact-title">Email Me</h3>
+            <p>if you need a content wiriter you can reach with to form below each open a email window page. </p>
+          </div>
+          <div class="container form-container">
+            <form action="action_page.php">
+              <label for="fname" class="labels">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+  
+              <label for="lname" class="labels">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+              <input
+                type="submit"
+                value="Submit"
+                class="button"
+                style="width: 100%"
+                onclick="return sendEmail();"
+              />
+            </form>
+          </div>
+      </section>
+
+      <footer>
+        <div class="footer-bg">
+          <div class="footer-container container grid">
+            <div>
+              <h1 class="footer-title">Shahrzad</h1>
+              <span class="footer-sub">Content Writer</span>
+            </div>
+            <ul class="footer-links">
+              <li>
+                <a href="#home" class="footer-link"> Home </a>
+              </li>
+              <li>
+                <a href="#about" class="footer-link"> About </a>
+              </li>
+
+              <li>
+                <a href="#services" class="footer-link"> Services</a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer-copy">all rights reserved</p>
+        </div>
+      </footer>
+
+      <a href="#" class="scrollup" id="scrollup">
+        <i class="uil uil-angle-double-up scrollup-icon"></i>
+      </a>
+    </main>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

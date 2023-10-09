@@ -54,3 +54,10 @@ themeButton.addEventListener('click',() =>{
     localStorage.setItem('selected-icon', getCurrentIcon())
 
 })
+
+
+function sendEmail(){
+  event.preventDefault()
+  window.open('mailto:ar6shahrzad@gmail.com');
+}
+

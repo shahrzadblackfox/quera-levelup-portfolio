@@ -185,7 +185,7 @@ img {
 }
 
 .home-content {
-  grid-template-columns: .5fr 3fr;
+  grid-template-columns: 0.5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
 }
@@ -418,7 +418,6 @@ img {
 }
 
 body.dark-theme {
-
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(250, 18%, 93%);
   --inpit-color: hsl(250, 70%, 96%);
@@ -426,6 +425,76 @@ body.dark-theme {
   --gray-background: rgb(78, 78, 78);
   --fill-black-color: #fff;
 }
+
+
+/* contact page */
+
+.contact-container {
+  gap: 1rem;
+}
+
+.contact-content {
+  grid-template-columns: 0.5fr 3fr;
+  padding-top: 3.5rem;
+  align-items: center;
+}
+
+.contact-social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.contact-social-icon {
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.contact-social-icon:hover {
+  color: rgb(60, 10, 107);
+}
+
+.section-one {
+  padding: 11rem 0 2rem;
+}
+.contact-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-title {
+  padding-bottom: 1rem;
+}
+.contact-sub {
+  padding-bottom: .8rem;
+
+}
+
+.form-container{
+  margin-top: 20px;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: .9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.labels{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+
+
+
+
+
 
 /* small screen */
 
@@ -449,6 +518,9 @@ body.dark-theme {
   .main {
     margin-top: 0;
   }
+  .section-one {
+    padding: 1rem 0 2rem;
+  }
 }
 /*medium*/
 @media screen and (min-width: 568px) {
@@ -456,13 +528,12 @@ body.dark-theme {
     grid-template-columns: max-content 1fr 1fr;
   }
   .home-data {
-    grid-column: initial ;
-
+    grid-column: initial;
   }
   .home-img {
- 
     justify-self: left;
-
+    margin-left: -130px;
+    margin-right: -23px;
   }
   .about-container,
   .writing-container {
@@ -521,7 +592,8 @@ body.dark-theme {
   }
 
   .home-blob {
-    width: 570px;
+    width: 470px;
+    left: 0;
   }
   .home-scroll {
     display: block;
@@ -551,12 +623,15 @@ body.dark-theme {
   .footer-bg {
     padding: 3rem 0 3.5rem;
   }
-  .footer-link {
+  .footer-links {
     flex-direction: row;
     column-gap: 2rem;
   }
   .footer-copy {
     margin-top: 4.5rem;
+  }
+  .footer-links {
+    padding-top: 20%;
   }
 }
 /* bigger screen */
@@ -574,3 +649,4 @@ body.dark-theme {
     transform: translateX(-6rem);
   }
 }
+
