@@ -426,7 +426,6 @@ body.dark-theme {
   --fill-black-color: #fff;
 }
 
-
 /* contact page */
 
 .contact-container {
@@ -466,17 +465,18 @@ body.dark-theme {
   padding-bottom: 1rem;
 }
 .contact-sub {
-  padding-bottom: .8rem;
-
+  padding-bottom: 0.8rem;
 }
 
-.form-container{
+.form-container {
   margin-top: 20px;
 }
 
-input[type=text], select, textarea{
+input[type="text"],
+select,
+textarea {
   width: 100%;
-  padding: .9rem;
+  padding: 0.9rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -484,17 +484,77 @@ input[type=text], select, textarea{
   margin-bottom: 16px;
   resize: vertical;
 }
-.labels{
+.labels {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
+.skills-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 6px;
+}
+.skills{
+  background-color: var(--gray-background);
+}
+
+.skill {
+  padding: 5px;
+  min-width: 5%;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: normal;
+  transition: transform 0.2s;
+  cursor: pointer;
+  
+}
+
+.skill:hover {
+  transform: scale(1.2);
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+/* experience page */
+
+.intro-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experience-img {
+  padding: 4rem 0 3rem;
+}
+.experience-img > img {
+  border-radius: 4rem;
+}
+.experience-data {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.experience-title{
+  margin-bottom: 2rem;
+}
+.experience-sub {
+  padding: 0 2rem;
+  justify-content: center;
+}
 
 
+.companies{
+  display: flex;
 
-
-
-
+}
+.companies-name {
+  width: 30%;
+}
 
 /* small screen */
 
@@ -538,6 +598,9 @@ input[type=text], select, textarea{
   .about-container,
   .writing-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .intro-experience {
+    flex-direction: row;
   }
 }
 
@@ -649,4 +712,3 @@ input[type=text], select, textarea{
     transform: translateX(-6rem);
   }
 }
-
