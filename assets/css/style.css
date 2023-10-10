@@ -550,10 +550,32 @@ textarea {
 
 .companies{
   display: flex;
+  justify-content: center;
+  padding-top: 3rem;
 
 }
 .companies-name {
-  width: 30%;
+  width: auto;
+  height: 60px;
+ 
+
+}
+.other{
+  background-color: var(--gray-background);
+}
+.experience-python{
+  display: flex;
+  padding-top: 4rem;
+}
+.python-img > img{
+  width: 100%;
+  padding-top: 2rem;
+}
+.experience-python{
+  display: flex;
+  padding-top: 4rem;
+  flex-direction: column;
+  margin: 20px 20px;
 }
 
 /* small screen */
@@ -602,6 +624,15 @@ textarea {
   .intro-experience {
     flex-direction: row;
   }
+  .python-img > img{
+    align-self: center;
+   
+  }
+  .experience-python{
+    align-items: center;
+    flex-direction: row;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
