@@ -575,6 +575,10 @@ textarea {
 }
 .other{
   background-color: var(--gray-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .experience-python{
   display: flex;
@@ -593,6 +597,40 @@ textarea {
 }
 .python-data >h2{
   padding-bottom: 2rem;
+}
+
+.card-group{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.card{
+  width: 340px;
+  height: auto;
+  background-color: white;
+  border-radius: 1rem;
+  padding: .7rem;
+  margin: 0 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+ 
+
+}
+
+.card-img{
+  border-radius: 1rem;
+  padding-bottom: 8px;
+}
+.card-title{
+  padding-bottom: 12px;
+
+}
+.card-button a{
+  color:#fff !important
 }
 /* small screen */
 
@@ -648,7 +686,14 @@ textarea {
     align-items: center;
     flex-direction: row;
   }
-
+  .card-group{
+    display: flex;
+    flex-direction: row;
+  }
+  .card{
+    width: 240px;
+  }
+  
 }
 
 @media screen and (min-width: 768px) {
